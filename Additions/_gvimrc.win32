@@ -1,4 +1,1 @@
-source $HOME/menghanrc/dot-vimrcs/vimrc_basic.vim
-source $HOME/menghanrc/dot-vimrcs/vimrc_encoding.vim
-source $HOME/menghanrc/dot-vimrcs/vimrc_utilities.vim
-source $HOME/menghanrc/dot-vimrcs/vimrc_filetype.vim
+set guifont=Consolas:h14:cANSI
