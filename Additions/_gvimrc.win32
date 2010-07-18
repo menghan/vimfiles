@@ -1,1 +1,5 @@
-set guifont=Consolas:h14:cANSI
+set guifont=Consolas:h13:cANSI
+set lines=26
+set columns=83
+chdir $HOME
+set autochdir

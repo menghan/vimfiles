@@ -14,24 +14,26 @@ setlocal ruler
 setlocal wildmenu
 setlocal commentstring=\ #\ %s
 setlocal foldlevel=0
-setlocal clipboard+=unnamed
 setlocal smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 setlocal fdm=indent
+setlocal fileencodings=ucs-bom,utf-8,default,latin1
+setlocal fileencoding=utf-8
+setlocal fileformat=unix
 syntax on
 
 let python_highlight_all = 1
 
+nnoremap <buffer> \rr :!python %<CR>
+nnoremap <buffer> \rd :!python -m pdb %<CR>
+setlocal errorformat=%f:%l:%n:\ %m
+nnoremap <buffer> \cl m`:%s/\ \+$//g<CR>``
+setlocal makeprg=pep8\ --repeat\ %
+setlocal shellpipe=>%s\ 2>&1
+nnoremap <buffer> <F5> :make<CR>
+
 if has('unix')
-	nnoremap <buffer> \rr :!python %<CR>
-	nnoremap <buffer> \r5 :!python2.5 %<CR>
-	nnoremap <buffer> \r6 :!python2.6 %<CR>
 	nnoremap <buffer> \r3 :!python3 %<CR>
-	setlocal errorformat=%f:%l:%n:\ %m
-	setlocal makeprg=pep8\ --repeat\ %
-	setlocal shellpipe=>%s\ 2>&1
-	nnoremap <buffer> <F5> :make<CR>
 endif
-nnoremap <buffer> \cl :%s/\ \+$//g<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "highlight columns over 80
