@@ -1,0 +1,1 @@
+/usr/share/vim/vimcurrent/lang/menu_zh_cn.utf-8.vim
