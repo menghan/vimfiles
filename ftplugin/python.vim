@@ -30,6 +30,7 @@ nnoremap <buffer> \cl m`:%s/\ \+$//g<CR>``
 setlocal makeprg=pep8\ --repeat\ %
 setlocal shellpipe=>%s\ 2>&1
 nnoremap <buffer> <F5> :make<CR>
+nnoremap <buffer> <C-F5> :!pylint %<CR>
 
 if has('unix')
 	nnoremap <buffer> \r3 :!python3 %<CR>
