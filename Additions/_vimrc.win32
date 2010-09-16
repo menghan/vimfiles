@@ -1,4 +1,4 @@
-source $HOME/menghanrc/dot-vimrcs/vimrc_basic.vim
-source $HOME/menghanrc/dot-vimrcs/vimrc_encoding.vim
-source $HOME/menghanrc/dot-vimrcs/vimrc_utilities.vim
-source $HOME/menghanrc/dot-vimrcs/vimrc_filetype.vim
+source ~/vimfiles/vimrc_basic.vim
+source ~/vimfiles/vimrc_encoding.vim
+source ~/vimfiles/vimrc_utilities.vim
+source ~/vimfiles/vimrc_filetype.vim
