@@ -27,7 +27,7 @@ set winaltkeys=no "防止windows解释alt组合键
 set showcmd
 set showmatch " show matching brackets
 set ignorecase smartcase
-set nohlsearch " do not highlight searched for phrases
+set hlsearch " do not highlight searched for phrases
 set incsearch " BUT do highlight as you type you search phrase
 set ambiwidth=double
 set display=lastline,uhex
