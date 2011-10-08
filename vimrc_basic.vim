@@ -156,3 +156,6 @@ let NERDCommentWholeLinesInVMode = 1
 let NERDShutUp = 1
 let NERDSpaceDelims = 1
 let NERDMenuMode = 0
+
+"fencview
+let g:fencview_autodetect = 0
