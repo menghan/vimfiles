@@ -11,9 +11,8 @@ endfunction
 nnoremap <buffer> <F5> :call WMakeRun()<CR>
 
 setlocal completeopt=longest,menu
-setlocal expandtab
 setlocal number
-setlocal shiftwidth=4
+setlocal shiftwidth=8
 setlocal cino+=:0 "dont' indent case:
 setlocal foldmethod=syntax
 nnoremap <buffer> ,cn :cn<CR>
