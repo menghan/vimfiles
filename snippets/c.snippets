@@ -126,28 +126,33 @@ snippet usaco
 	PROG: `Filename()`
 	LANG: C++
 	*/
-	#include <cassert>
+
+	#ifdef DEBUG_MENGHAN
+	#include <iostream>
+	#endif
 	#include <fstream>
 	#include <string>
 	#include <vector>
 	#include <algorithm>
-	#ifdef DEBUG_SKY
-	#include <cstdio>
-	#include <cstring>
-	#include <cstdlib>
-	#endif
+
+	#define IN_FILE_NAME "`Filename()`.in"
+	#define OUT_FILE_NAME "`Filename()`.out"
+
 
 	int main(int argc, const char *argv[])
 	{
-	    std::ifstream fin("`Filename()`.in");
-	    std::ofstream fout("`Filename()`.out");
-	    assert(fin && fout);
+		std::ifstream fin(IN_FILE_NAME);
+	#ifndef DEBUG_MENGHAN
+		std::ofstream fout("`Filename()`.out");
+	#else
+		std::ostream &fout = std::cout;
+	#endif
 
-	    ${1}
+		${1}
 
-	    fin.close();
-	    fout.close();
-	    return 0;
+		fout << std::endl;
+
+		return 0;
 	}
 snippet tjuoj
 	#include <cassert>

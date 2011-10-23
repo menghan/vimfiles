@@ -28,10 +28,3 @@ endfunction
 if has("cscope")
 	autocmd BufRead,BufNewFile  *.c,*.cpp,*.cc,*.h,*.hpp call ConfigCscope()
 endif
-
-" usaco configure"
-autocmd BufRead,BufNewFile *.cpp let usacopath = expand("%:p:h") |
-			\ if match(usacopath, 'usaco') >= 0|
-			\ call USACO_Init() |
-			\ endif
-autocmd BufRead *.out nnoremap <buffer> <F5> :v/^DEBUG<CR>
