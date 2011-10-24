@@ -27,7 +27,7 @@ let python_highlight_all = 1
 nnoremap <buffer> \rr :!python %<CR>
 nnoremap <buffer> \rd :!python -m pdb %<CR>
 setlocal errorformat=%f:%l:%n:\ %m
-nnoremap <buffer> \cl m`:%s/\ \+$//g<CR>``
+nnoremap <buffer> \cl m`:silent! %s/\t/\ \ \ \ /g<CR>:silent! %s/\ \+$//g<CR>``
 setlocal makeprg=pep8\ --repeat\ %
 setlocal shellpipe=>%s\ 2>&1
 nnoremap <buffer> <F5> :make<CR>
