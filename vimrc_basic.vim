@@ -159,3 +159,6 @@ let NERDMenuMode = 0
 
 "fencview
 let g:fencview_autodetect = 0
+
+" for ctags
+let Tlist_JS_Settings = 'javascript;s:string;a:array;o:object;f:function'

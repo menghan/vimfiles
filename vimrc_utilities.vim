@@ -4,9 +4,9 @@ function! Makeusaco()
 		let s:choice = confirm("No Makefile", "&Ok", 1)
 		return
 	endif
-	silent !(make clean; f=`ls -lt *.cpp | head -n 1 | awk '{print $NF}'`; f=${f/cpp/exe}; make $f; rm -f current.exe; ln -s $f current.exe)
+	silent !(f=`ls -lt *.cpp | head -n 1 | awk '{print $NF}'`; f=${f/cpp/exe}; make $f; rm -f current.exe; ln -s $f current.exe)
 	if filereadable(expand('%:r') . '.exe')
-		!./current.exe
+		!time ./current.exe
 	else
 		let s:choice = confirm("Compile Error!", "&Neglect\n&View", 2)
 		if s:choice == 2
