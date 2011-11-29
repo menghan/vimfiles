@@ -6,7 +6,6 @@ setlocal softtabstop=4
 setlocal tabstop=4
 setlocal expandtab
 setlocal smarttab
-setlocal textwidth=80
 setlocal autoindent
 setlocal backspace=indent,eol,start
 setlocal incsearch
