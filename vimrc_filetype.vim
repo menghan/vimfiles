@@ -28,3 +28,6 @@ endfunction
 if has("cscope")
 	autocmd BufRead,BufNewFile  *.c,*.cpp,*.cc,*.h,*.hpp call ConfigCscope()
 endif
+
+" mako
+autocmd BufRead,BufNewFile */shire*.html set ft=mako
