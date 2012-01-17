@@ -75,7 +75,7 @@ function IsInsidePythonBlock(startline)
 
     " lnum points to the last control. If it's a <% then we're inside an
     " embedded python block, otherwise we're not.
-    return getline(lnum) =~ '<%$'
+    return getline(lnum) =~ '<%!\?$'
 endfunction
 
 function GetMakoIndent()
@@ -122,7 +122,7 @@ function GetMakoIndent()
     endif
 
     " Indent at the beginning of a python control block
-    if line =~ '<%$'
+    if line =~ '<%!\?$'
         let ind = ind + &sw
     endif
     "
@@ -130,7 +130,7 @@ function GetMakoIndent()
     if cline =~ '^\s*%>$'
         let scanlnum = lnum
         " Scan backwards until we find the beginning of this python block.
-        while getline(scanlnum) !~ '<%$' && scanlnum > 0
+        while getline(scanlnum) !~ '<%!\?$' && scanlnum > 0
             let scanlnum = scanlnum - 1
         endwhile
         let ind = indent(scanlnum)
@@ -229,6 +229,7 @@ call <SID>HtmlIndentPush('tt')
 call <SID>HtmlIndentPush('u')
 call <SID>HtmlIndentPush('ul')
 call <SID>HtmlIndentPush('var')
+call <SID>HtmlIndentPush('li')
 
 " For some reason the default HTML indentation script doesn't consider these
 " elements to be worthy of indentation.
