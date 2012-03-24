@@ -91,6 +91,7 @@ match WhitespaceEOL /\s\+$/
 "highlight MergeMarker guibg=red ctermbg=red
 "match MergeMarker /^[<=>\|]\{7\}\( [A-Z]\+\)?$/
 
+function! UsePython()
 " `gf` jumps to the filename under the cursor.  Point at an import statement
 " and jump to it!
 python << EOF
@@ -168,3 +169,9 @@ def RemoveBreakpoints():
 
 vim.command( "map <s-f7> :py RemoveBreakpoints()<cr>")
 EOF
+endfunction
+
+
+if has('python')
+  call UsePython()
+endif
