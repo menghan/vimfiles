@@ -1,3 +1,3 @@
-set guifont=Monospace\ 11
 set lines=26
-set columns=83
+set columns=84
+set guifont=Monaco:h15
