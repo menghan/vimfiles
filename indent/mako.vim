@@ -230,6 +230,8 @@ call <SID>HtmlIndentPush('u')
 call <SID>HtmlIndentPush('ul')
 call <SID>HtmlIndentPush('var')
 call <SID>HtmlIndentPush('li')
+call <SID>HtmlIndentPush('section')
+call <SID>HtmlIndentPush('header')
 
 " For some reason the default HTML indentation script doesn't consider these
 " elements to be worthy of indentation.
