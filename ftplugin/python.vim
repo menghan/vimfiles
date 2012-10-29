@@ -29,16 +29,11 @@ nnoremap <buffer> \rr :!python %<CR>
 nnoremap <buffer> \rd :!python -m pdb %<CR>
 setlocal errorformat=%f:%l:%n:\ %m
 nnoremap <buffer> \cl m`:silent! %s/\t/\ \ \ \ /g<CR>:silent! %s/\ \+$//g<CR>``
-vnoremap <buffer> \csr :s/\([*%/,:+-]\)\([^ ]\)/\1 \2/g<CR>
-vnoremap <buffer> \csl :s/\([^ ]\)\([*%/+-]\)/\1 \2/g<CR>
 setlocal makeprg=pep8\ --repeat\ %
 setlocal shellpipe=>%s\ 2>&1
 nnoremap <buffer> <F5> :make<CR>
-if has('unix')
-	nnoremap <buffer> <C-F5> :!pylint % 2>/dev/null<CR>
-else
-	nnoremap <buffer> <C-F5> :!pylint % 2>null<CR>
-endif
+nnoremap <buffer> \rpd :!autopep8 --diff % \| cdiff<CR>
+nnoremap <buffer> \rpa :!autopep8 -i %<CR>
 
 if has('unix')
 	nnoremap <buffer> \r3 :!python3 %<CR>
