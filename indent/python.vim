@@ -1,8 +1,10 @@
-" Python indent file
-" Language:	    Python
-" Maintainer:	    Eric Mc Sween <em@tomcom.de>
-" Original Author:  David Bustos <bustos@caltech.edu>
-" Last Change:      2004 Jun 07
+" PEP8 compatible Python indent file
+" Language:         Python
+" Maintainer:       Hynek Schlawack <hs@ox.cx>
+" Prev Maintainer:  Eric Mc Sween <em@tomcom.de> (address invalid)
+" Original Author:  David Bustos <bustos@caltech.edu> (address invalid)
+" Last Change:      2012-06-21
+" License:          Public Domain
 
 " Only load this indent file when no other was loaded.
 if exists("b:did_indent")
@@ -119,11 +121,7 @@ function! GetPythonIndent(lnum)
                 return indent(parlnum) + &shiftwidth
             endif
         else
-            if closing_paren
-                return parcol - 1
-            else
-                return parcol
-            endif
+            return parcol
         endif
     endif
 
@@ -174,9 +172,9 @@ function! GetPythonIndent(lnum)
         endif
     endif
 
-    " If the previous line ended with a colon, indent relative to
-    " statement start.
-    if pline =~ ':\s*$'
+    " If the previous line ended with a colon and is not a comment, indent
+    " relative to statement start.
+    if pline =~ ':\s*$' && pline !~ '^\s*#'
         return indent(sslnum) + &sw
     endif
 

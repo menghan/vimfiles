@@ -13,12 +13,14 @@ setlocal ignorecase
 setlocal ruler
 setlocal wildmenu
 setlocal commentstring=\ #\ %s
-setlocal foldlevel=0
+setlocal foldlevel=99
 setlocal smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 setlocal fdm=indent
 setlocal fileencodings=ucs-bom,utf-8,default,latin1
 setlocal fileencoding=utf-8
 setlocal fileformat=unix
+setlocal virtualedit=block
+setlocal scrolloff=3
 syntax on
 
 let python_highlight_all = 1
