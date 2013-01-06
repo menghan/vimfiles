@@ -16,6 +16,7 @@ Bundle 'snipMate'
 Bundle 'torte.vim'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'ZenCoding.vim'
+Bundle 'mbbill/fencview'
 
 " Example Bundles here:
 
