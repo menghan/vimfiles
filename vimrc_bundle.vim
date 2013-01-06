@@ -8,6 +8,11 @@ call vundle#rc()
 " required!
 Bundle 'gmarik/vundle'
 
+Bundle 'suan/vim-instant-markdown'
+Bundle 'taglist.vim'
+Bundle 'mru.vim'
+Bundle 'bufexplorer.zip'
+
 " Example Bundles here:
 
 " " original repos on github
