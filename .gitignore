@@ -2,3 +2,4 @@
 tags/python26.ctags
 doc/tags
 .*.swp
+/bundle

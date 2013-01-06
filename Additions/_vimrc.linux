@@ -1,3 +1,4 @@
+source ~/.vim/vimrc_bundle.vim
 source ~/.vim/vimrc_basic.vim
 source ~/.vim/vimrc_encoding.vim
 source ~/.vim/vimrc_utilities.vim
