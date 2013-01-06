@@ -15,6 +15,7 @@ Bundle 'bufexplorer.zip'
 Bundle 'snipMate'
 Bundle 'torte.vim'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'ZenCoding.vim'
 
 " Example Bundles here:
 
