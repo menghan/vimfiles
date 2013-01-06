@@ -12,6 +12,9 @@ Bundle 'suan/vim-instant-markdown'
 Bundle 'taglist.vim'
 Bundle 'mru.vim'
 Bundle 'bufexplorer.zip'
+Bundle 'snipMate'
+Bundle 'torte.vim'
+Bundle 'plasticboy/vim-markdown'
 
 " Example Bundles here:
 
