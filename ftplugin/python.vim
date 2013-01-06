@@ -29,11 +29,11 @@ nnoremap <buffer> \rr :!python %<CR>
 nnoremap <buffer> \rd :!python -m pdb %<CR>
 setlocal errorformat=%f:%l:%n:\ %m
 nnoremap <buffer> \cl m`:silent! %s/\t/\ \ \ \ /g<CR>:silent! %s/\ \+$//g<CR>``
-setlocal makeprg=pep8\ --repeat\ %
+setlocal makeprg=pep8\ --repeat\ --max-line-length=100\ %
 setlocal shellpipe=>%s\ 2>&1
 nnoremap <buffer> <F5> :make<CR>
-nnoremap <buffer> \rpd :!autopep8 --diff % \| cdiff<CR>
-nnoremap <buffer> \rpa :!autopep8 -i %<CR>
+nnoremap <buffer> \rpd :!autopep8 --ignore=E501 --diff % \| cdiff<CR>
+nnoremap <buffer> \rpa :!autopep8 --ignore=E501 -i %<CR>
 
 if has('unix')
 	nnoremap <buffer> \r3 :!python3 %<CR>
