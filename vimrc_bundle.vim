@@ -17,7 +17,7 @@ Bundle 'torte.vim'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'ZenCoding.vim'
 Bundle 'mbbill/fencview'
-Bundle 'http://code.dapps.douban.com/movie_ide.git'
+Bundle 'http://code.dapps.douban.com/menghan_movie_ide.git'
 
 " Example Bundles here:
 
