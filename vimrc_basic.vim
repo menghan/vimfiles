@@ -131,6 +131,7 @@ nnoremap ,d :bd<CR>
 nnoremap ,co :copen<CR>
 nnoremap \pp :set paste<CR>
 nnoremap \pn :set nopaste<CR>
+nnoremap ,m :MRU<CR>
 
 "still not understand
 "run ex and normal command and redirect message to register *, use try-finally
