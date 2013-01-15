@@ -17,6 +17,7 @@ Bundle 'torte.vim'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'ZenCoding.vim'
 Bundle 'mbbill/fencview'
+let g:shirevim#app = 'movie'
 Bundle 'http://code.dapps.douban.com/menghan_shire_vim.git'
 
 " Example Bundles here:
