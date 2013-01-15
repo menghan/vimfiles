@@ -19,6 +19,8 @@ Bundle 'ZenCoding.vim'
 Bundle 'mbbill/fencview'
 Bundle 'python.vim'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'mako.vim'
+Bundle 'menghan/mako.vim--Torborg'
 let g:shirevim#app = 'movie'
 Bundle 'http://code.dapps.douban.com/menghan_shire_vim.git'
 
