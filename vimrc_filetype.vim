@@ -1,7 +1,3 @@
-" tex configure"
-"
-autocmd BufRead,BufNewFile *.tex set ft=latex
-
 " mutt configure"
 autocmd BufRead /tmp/mutt-* set tw=72
 
@@ -28,7 +24,3 @@ endfunction
 if has("cscope")
 	autocmd BufRead,BufNewFile  *.c,*.cpp,*.cc,*.h,*.hpp call ConfigCscope()
 endif
-
-" mako
-autocmd BufRead,BufNewFile */shire*.html set ft=mako
-autocmd BufRead,BufNewFile *.mako set ft=mako
