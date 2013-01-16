@@ -1,5 +1,3 @@
-"my mako configure"
-
 setlocal nu
 setlocal shiftwidth=4
 setlocal softtabstop=4

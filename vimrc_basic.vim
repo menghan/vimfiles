@@ -60,6 +60,7 @@ nnoremap <leader>d :bd<CR>
 nnoremap <leader>co :copen<CR>
 nnoremap <leader>pt :set paste!<CR>
 nnoremap <leader>m :MRU<CR>
+inoremap jk <ESC>
 
 " open file
 noremap <leader>e :e <C-R>=expand("%:p:h") . "/" <CR><C-D>
@@ -131,7 +132,7 @@ if has("win32")
 endif
 
 " cscope config"
-function ConfigCscope()
+function! ConfigCscope()
 	nnoremap <buffer> <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
 	nnoremap <buffer> <C-_>g :cs find g <C-R>=expand("<cword>")<CR><CR>
 	nnoremap <buffer> <C-_>c :cs find c <C-R>=expand("<cword>")<CR><CR>
