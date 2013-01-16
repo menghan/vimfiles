@@ -36,6 +36,8 @@ set display=lastline,uhex
 set guitablabel=%{tabpagenr()}.%t\ %m
 " set tabline
 set wildignore=*.lo,*.o,*.obj,*.exe,*.pyc,*.ptlc " tab complete now ignores these
+set modeline
+set modelines=5
 
 " [diff options]
 set diffopt=filler,vertical
