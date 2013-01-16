@@ -148,18 +148,6 @@ if has("win32")
 	nnoremap ,cmd :silent !start cmd /K "cd /d %:p:h"<CR>
 endif
 
-"for NERD_commenter
-let NERDCommentWholeLinesInVMode = 1
-let NERDShutUp = 1
-let NERDSpaceDelims = 1
-let NERDMenuMode = 0
-
-"fencview
-let g:fencview_autodetect = 0
-
-" for ctags
-let Tlist_JS_Settings = 'javascript;s:string;a:array;o:object;f:function'
-
 " mutt configure"
 autocmd BufRead /tmp/mutt-* set tw=72
 

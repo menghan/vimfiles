@@ -9,18 +9,28 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'suan/vim-instant-markdown'
-Bundle 'taglist.vim'
 Bundle 'mru.vim'
 Bundle 'bufexplorer.zip'
 Bundle 'snipMate'
 Bundle 'torte.vim'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'ZenCoding.vim'
-Bundle 'mbbill/fencview'
 Bundle 'python.vim'
-Bundle 'scrooloose/nerdcommenter'
 Bundle 'mako.vim'
 Bundle 'menghan/mako.vim--Torborg'
+
+let Tlist_JS_Settings = 'javascript;s:string;a:array;o:object;f:function'
+Bundle 'taglist.vim'
+
+let g:fencview_autodetect = 0
+Bundle 'mbbill/fencview'
+
+let NERDCommentWholeLinesInVMode = 1
+let NERDShutUp = 1
+let NERDSpaceDelims = 1
+let NERDMenuMode = 0
+Bundle 'scrooloose/nerdcommenter'
+
 let g:shirevim#app = 'movie'
 Bundle 'http://code.dapps.douban.com/menghan_shire_vim.git'
 
