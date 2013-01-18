@@ -19,6 +19,7 @@ Bundle 'python.vim'
 Bundle 'mako.vim'
 Bundle 'menghan/mako.vim--Torborg'
 Bundle 'CmdlineComplete'
+Bundle 'hynek/vim-python-pep8-indent'
 
 let Tlist_JS_Settings = 'javascript;s:string;a:array;o:object;f:function'
 Bundle 'taglist.vim'

@@ -14,7 +14,8 @@ setlocal ruler
 setlocal wildmenu
 setlocal commentstring=\ #\ %s
 setlocal foldlevel=99
-setlocal smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+" setlocal smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+" setlocal nosmartindent
 setlocal fdm=indent
 setlocal fileencodings=ucs-bom,utf-8,default,latin1
 setlocal fileencoding=utf-8
