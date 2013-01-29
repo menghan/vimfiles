@@ -35,7 +35,7 @@ let NERDMenuMode = 0
 Bundle 'scrooloose/nerdcommenter'
 
 let g:shirevim#app = 'movie'
-Bundle 'http://code.dapps.douban.com/menghan_shire_vim.git'
+Bundle 'http://code.dapps.douban.com/menghan/shire_vim.git'
 
 " Example Bundles here:
 
