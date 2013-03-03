@@ -63,8 +63,9 @@ nnoremap <leader>co :copen<CR>
 nnoremap <leader>pt :set paste!<CR>
 nnoremap <leader>m :MRU<CR>
 inoremap jk <ESC>
-nnoremap <buffer> <leader>cls m`:silent! %s/\s\+$//g<CR>``
-nnoremap <buffer> <leader>clt m`:silent! %s/\t/\ \ \ \ /g<CR>``
+nnoremap <leader>cls m`:silent! %s/\s\+$//g<CR>``
+nnoremap <leader>clt m`:silent! %s/\t/\ \ \ \ /g<CR>``
+nnoremap <leader>rp :%s/<C-R>//
 
 " open file
 noremap <leader>e :e <C-R>=expand("%:p:h") . "/" <CR><C-D>
