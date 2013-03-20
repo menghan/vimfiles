@@ -21,7 +21,6 @@ Bundle 'menghan/mako.vim--Torborg'
 Bundle 'CmdlineComplete'
 Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'menghan/pydoc.vim--Repass'
-Bundle 'skammer/vim-css-color'
 
 let Tlist_JS_Settings = 'javascript;s:string;a:array;o:object;f:function'
 Bundle 'taglist.vim'
