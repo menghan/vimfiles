@@ -14,8 +14,6 @@ setlocal ruler
 setlocal wildmenu
 setlocal commentstring=\ #\ %s
 setlocal foldlevel=99
-" setlocal smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
-" setlocal nosmartindent
 setlocal fdm=indent
 setlocal fileencodings=ucs-bom,utf-8,default,latin1
 setlocal fileencoding=utf-8
@@ -38,6 +36,9 @@ nnoremap <buffer> <leader>rpa :!autopep8 --ignore=E501 -i %<CR>
 if has('unix')
 	nnoremap <buffer> <leader>r3 :!python3 %<CR>
 endif
+
+inoreabbrev <buffer> pdbst __import__('pdb').set_trace()
+inoreabbrev <buffer> ppppp __import__('pprint').pprint()
 
 " from http://vim.wikia.com/wiki/Highlight_long_lines
 "highlight columns over 80
