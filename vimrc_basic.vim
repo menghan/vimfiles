@@ -116,12 +116,6 @@ nnoremap <C-K> <C-W>k<C-W>_
 nnoremap <c-h> gT
 nnoremap <c-l> gt
 
-" goto neighbour
-nnoremap <leader>h <C-W>h
-nnoremap <leader>j <C-W>j
-nnoremap <leader>k <C-W>k
-nnoremap <leader>l <C-W>l
-
 " Scroll up and down in Quickfix
 nnoremap    <c-n>   :cn<cr>
 nnoremap    <c-p>   :cp<cr>
