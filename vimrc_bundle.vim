@@ -23,6 +23,7 @@ Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'menghan/pydoc.vim--Repass'
 Bundle 'mattn/gist-vim'
 Bundle 'jnwhiteh/vim-golang'
+Bundle 'tpope/vim-surround'
 
 let Tlist_JS_Settings = 'javascript;s:string;a:array;o:object;f:function'
 Bundle 'taglist.vim'

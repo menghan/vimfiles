@@ -16,7 +16,7 @@ set hidden
 " set completeopt=longest,menu,preview
 set backspace=indent,eol,start
 set mouse=a "allow mouse
-set clipboard+=unnamed "share the common clipboard with other applications
+" set clipboard+=unnamed "share the common clipboard with other applications
 set titlestring=%F
 set tags=./tags;
 set helplang=cn
