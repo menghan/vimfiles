@@ -142,6 +142,9 @@ function! ConfigCscope()
 	nnoremap <buffer> <C-_>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 endfunction
 
+" nerdtree
+nnoremap <leader>nt :NERDTreeToggle<CR>
+
 " [autocmds]
 
 " Uncomment the following to have Vim jump to the last position when
