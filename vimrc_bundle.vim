@@ -16,6 +16,8 @@ Bundle 'torte.vim'
 Bundle 'plasticboy/vim-markdown'
 
 " go get -u github.com/nsf/gocode for daemon
+" disable auto fmt on write
+let b:did_ftplugin_go_fmt = 1
 Bundle 'Blackrush/vim-gocode'
 
 " zencoding
