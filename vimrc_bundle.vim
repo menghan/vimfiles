@@ -15,6 +15,9 @@ Bundle 'snipMate'
 Bundle 'torte.vim'
 Bundle 'plasticboy/vim-markdown'
 
+" go get -u github.com/nsf/gocode for daemon
+Bundle 'Blackrush/vim-gocode'
+
 " zencoding
 Bundle 'Emmet.vim'
 
