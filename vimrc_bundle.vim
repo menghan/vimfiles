@@ -33,6 +33,7 @@ Bundle 'mattn/gist-vim'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/nerdtree'
+Bundle 'sjl/gundo.vim'
 
 let Tlist_JS_Settings = 'javascript;s:string;a:array;o:object;f:function'
 Bundle 'taglist.vim'

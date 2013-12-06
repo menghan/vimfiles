@@ -26,6 +26,7 @@ let python_highlight_all = 1
 
 nnoremap <buffer> <leader>rr :!python %<CR>
 nnoremap <buffer> <leader>rd :!python -m pdb %<CR>
+nnoremap <buffer> <leader>rt :!python -m doctest %<CR>
 setlocal errorformat=%f:%l:%n:\ %m
 setlocal makeprg=pep8\ --repeat\ --max-line-length=100\ %
 setlocal shellpipe=>%s\ 2>&1
