@@ -31,8 +31,8 @@ setlocal errorformat=%f:%l:%n:\ %m
 setlocal makeprg=pep8\ --repeat\ --max-line-length=100\ %
 setlocal shellpipe=>%s\ 2>&1
 nnoremap <buffer> <F5> :make<CR>
-nnoremap <buffer> <leader>rpd :!autopep8 --ignore=E126,E127 --max-line-length=99 --diff % \| cdiff<CR>
-nnoremap <buffer> <leader>rpa :!autopep8 --ignore=E126,E127 --max-line-length=99 -i %<CR>
+nnoremap <buffer> <leader>rpd :!autopep8 --ignore=E126,E127 --max-line-length=999 --diff % \| cdiff<CR>
+nnoremap <buffer> <leader>rpa :!autopep8 --ignore=E126,E127 --max-line-length=999 -i %<CR>
 
 if has('unix')
 	nnoremap <buffer> <leader>r3 :!python3 %<CR>
