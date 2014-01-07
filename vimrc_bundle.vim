@@ -34,7 +34,7 @@ Bundle 'jnwhiteh/vim-golang'
 Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/nerdtree'
 Bundle 'sjl/gundo.vim'
-Bundle 'tpope/vim-fugitive'
+Bundle 'menghan/vim-fugitive'
 
 let Tlist_JS_Settings = 'javascript;s:string;a:array;o:object;f:function'
 Bundle 'taglist.vim'
