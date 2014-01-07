@@ -34,6 +34,7 @@ Bundle 'jnwhiteh/vim-golang'
 Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/nerdtree'
 Bundle 'sjl/gundo.vim'
+Bundle 'tpope/vim-fugitive'
 
 let Tlist_JS_Settings = 'javascript;s:string;a:array;o:object;f:function'
 Bundle 'taglist.vim'
@@ -55,7 +56,6 @@ Bundle 'http://code.dapps.douban.com/menghan/shire_vim.git'
 " Example Bundles here:
 
 " " original repos on github
-" Bundle 'tpope/vim-fugitive'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Bundle 'tpope/vim-rails.git'
 " " vim-scripts repos
