@@ -11,9 +11,9 @@ set nobackup
 set autoindent
 set smartindent
 set hidden
-" set wildmode=list:full "auto complete
-" set wildmenu
-" set completeopt=longest,menu,preview
+set wildmode=longest,full:full
+set wildmenu
+set completeopt=longest,menu,preview
 set backspace=indent,eol,start
 set mouse=a "allow mouse
 " set clipboard+=unnamed "share the common clipboard with other applications
