@@ -66,6 +66,7 @@ inoremap jk <ESC>
 nnoremap <leader>cls m`:silent! %s/\s\+$//g<CR>``
 nnoremap <leader>clt m`:silent! %s/\t/\ \ \ \ /g<CR>``
 nnoremap <leader>rp :%s/<C-R>//
+nnoremap <leader>1 <C-W><C-W>:bd<CR>
 
 " open file
 noremap <leader>e :e <C-R>=expand("%:p:h") . "/" <CR><C-D>
