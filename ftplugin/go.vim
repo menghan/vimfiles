@@ -2,8 +2,8 @@ setlocal number
 setlocal foldmethod=syntax
 nnoremap <buffer> <F5> :make<CR>
 
-" generate tags. TODO: generate system tags. from https://github.com/jstemmer/gotags
-nnoremap <buffer> ,ut :!find . "$GOROOT/src/pkg" "$GOPATH/src" -name "*.go" \| xargs gotags > tags<CR>
+" generate tags. from https://github.com/jstemmer/gotags
+nnoremap <buffer> ,ut :!find . "$GOPATH/src" "$GOSRC/pkg" -name "*.go" \| xargs gotags > tags<CR>
 let g:tagbar_type_go = {
 			\ 'ctagstype' : 'go',
 			\ 'kinds'     : [
