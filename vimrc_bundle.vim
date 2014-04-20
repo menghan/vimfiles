@@ -35,6 +35,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/nerdtree'
 Bundle 'sjl/gundo.vim'
 Bundle 'menghan/vim-fugitive'
+Bundle 'ekalinin/Dockerfile.vim'
 
 let Tlist_JS_Settings = 'javascript;s:string;a:array;o:object;f:function'
 Bundle 'taglist.vim'
