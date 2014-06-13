@@ -26,7 +26,6 @@ Bundle 'Emmet.vim'
 Bundle 'python.vim'
 Bundle 'mako.vim'
 Bundle 'menghan/mako.vim--Torborg'
-Bundle 'CmdlineComplete'
 Bundle 'hynek/vim-python-pep8-indent'
 " Bundle 'menghan/pydoc.vim--Repass'
 Bundle 'mattn/gist-vim'
@@ -48,6 +47,9 @@ let NERDShutUp = 1
 let NERDSpaceDelims = 1
 let NERDMenuMode = 0
 Bundle 'scrooloose/nerdcommenter'
+
+let g:cmdline_complete_no_python = 1
+Bundle 'menghan/CmdlineComplete'
 
 " let g:shirevim#app = 'movie'
 " " disable <Ctrl-P> mapping
