@@ -21,6 +21,7 @@ let g:did_ftplugin_go_fmt = 1
 Bundle 'menghan/vim-gocode'
 
 " zencoding
+let g:user_emmet_leader_key='<C-X>'
 Bundle 'Emmet.vim'
 
 Bundle 'python.vim'
