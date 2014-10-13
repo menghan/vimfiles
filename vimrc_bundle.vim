@@ -9,11 +9,13 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'suan/vim-instant-markdown'
-Bundle 'mru.vim'
 Bundle 'bufexplorer.zip'
 Bundle 'snipMate'
 Bundle 'torte.vim'
 Bundle 'plasticboy/vim-markdown'
+
+let MRU_Max_Entries = 300
+Bundle 'mru.vim'
 
 " go get -u github.com/nsf/gocode for daemon
 " disable auto fmt on write
