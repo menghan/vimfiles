@@ -44,7 +44,7 @@ let Tlist_JS_Settings = 'javascript;s:string;a:array;o:object;f:function'
 Bundle 'taglist.vim'
 
 let g:fencview_autodetect = 0
-Bundle 'mbbill/fencview'
+Bundle 'menghan/fencview'
 
 let NERDCommentWholeLinesInVMode = 1
 let NERDShutUp = 1
