@@ -25,6 +25,7 @@ Bundle 'menghan/vim-gocode'
 " zencoding
 Bundle 'mattn/emmet-vim'
 
+Bundle 'motemen/git-vim'
 Bundle 'python.vim'
 Bundle 'mako.vim'
 Bundle 'menghan/mako.vim--Torborg'
