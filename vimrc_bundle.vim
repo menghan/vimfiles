@@ -45,7 +45,7 @@ let Tlist_JS_Settings = 'javascript;s:string;a:array;o:object;f:function'
 Bundle 'taglist.vim'
 
 let g:fencview_autodetect = 0
-Bundle 'menghan/fencview'
+Bundle 'mbbill/fencview'
 
 let NERDCommentWholeLinesInVMode = 1
 let NERDShutUp = 1
@@ -55,11 +55,6 @@ Bundle 'scrooloose/nerdcommenter'
 
 let g:cmdline_complete_no_python = 1
 Bundle 'menghan/CmdlineComplete'
-
-" let g:shirevim#app = 'movie'
-" " disable <Ctrl-P> mapping
-" let loaded_shirevim_config = 1
-" Bundle 'http://code.dapps.douban.com/menghan/shire_vim.git'
 
 " Example Bundles here:
 
