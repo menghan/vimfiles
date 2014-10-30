@@ -9,7 +9,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'suan/vim-instant-markdown'
-Bundle 'bufexplorer.zip'
+Bundle 'menghan/bufexplorer.zip'
 Bundle 'snipMate'
 Bundle 'torte.vim'
 Bundle 'plasticboy/vim-markdown'
