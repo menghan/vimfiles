@@ -41,6 +41,9 @@ Bundle 'ekalinin/Dockerfile.vim'
 Bundle 'lepture/vim-jinja'
 Bundle 'menghan/vim-web-indent'
 
+let g:ansible_options = {'ignore_blank_lines': 0}
+Bundle 'chase/vim-ansible-yaml'
+
 let Tlist_JS_Settings = 'javascript;s:string;a:array;o:object;f:function'
 Bundle 'taglist.vim'
 
