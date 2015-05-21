@@ -3,7 +3,7 @@ setlocal foldmethod=syntax
 nnoremap <buffer> <F5> :make<CR>
 
 " generate tags. from https://github.com/jstemmer/gotags
-nnoremap <buffer> ,ut :!find . "$GOPATH/src" "$GOSRC/pkg" -name "*.go" \| xargs gotags > tags<CR>
+nnoremap <buffer> ,ut :!find . "$GOPATH/src" "$GOROOT/src" -name "*.go" \| xargs gotags > tags<CR>
 let g:tagbar_type_go = {
 			\ 'ctagstype' : 'go',
 			\ 'kinds'     : [
