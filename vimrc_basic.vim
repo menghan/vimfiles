@@ -62,7 +62,6 @@ nnoremap <leader>d :bd<CR>
 nnoremap <leader>co :copen<CR>
 nnoremap <leader>pt :set paste!<CR>
 nnoremap <leader>m :MRU<CR>
-inoremap jk <ESC>
 nnoremap <leader>cls m`:silent! %s/\s\+$//g<CR>``
 nnoremap <leader>clt m`:silent! %s/\t/\ \ \ \ /g<CR>``
 nnoremap <leader>rp :%s/<C-R>//
