@@ -8,6 +8,7 @@ call vundle#rc()
 " required!
 Bundle 'gmarik/vundle'
 
+Bundle 'fatih/vim-go'
 Bundle 'suan/vim-instant-markdown'
 Bundle 'bufexplorer.zip'
 Bundle 'snipMate'
