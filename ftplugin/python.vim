@@ -12,6 +12,7 @@ setlocal incsearch
 setlocal ignorecase
 setlocal ruler
 setlocal wildmenu
+
 setlocal commentstring=\ #\ %s
 setlocal foldlevel=99
 setlocal fdm=indent
@@ -21,6 +22,8 @@ setlocal fileformat=unix
 setlocal virtualedit=block
 setlocal scrolloff=3
 syntax on
+" transparent background
+hi Normal guibg=NONE ctermbg=NONE
 
 let python_highlight_all = 1
 
