@@ -53,6 +53,9 @@ set softtabstop=8
 set smarttab " use tabs at the start of a line,spaces elsewhere
 set shiftwidth=8
 
+" transparent background
+hi Normal guibg=NONE ctermbg=NONE
+
 " [mappings]
 let mapleader=','
 
