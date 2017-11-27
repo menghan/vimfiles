@@ -56,6 +56,9 @@ let NERDCommentWholeLinesInVMode = 1
 let NERDShutUp = 1
 let NERDSpaceDelims = 1
 let NERDMenuMode = 0
+let NERDCustomDelimiters = {
+    \ 'python': { 'left': '#', 'leftAlt': '#' },
+    \ }
 Bundle 'scrooloose/nerdcommenter'
 
 let g:cmdline_complete_no_python = 1
