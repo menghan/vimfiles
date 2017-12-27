@@ -33,8 +33,8 @@ let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_autosave = 1
 let g:go_metalinter_deadline = "5s"
 
-let g:go_auto_sameids = 1
 let g:go_auto_type_info = 1
+setlocal updatetime=100
 
 " " generate tags. from https://github.com/jstemmer/gotags
 " nnoremap <buffer> ,ut :!find . "$GOPATH/src" "$GOROOT/src" -name "*.go" \| xargs gotags > tags<CR>
