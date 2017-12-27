@@ -37,7 +37,7 @@ let g:go_auto_type_info = 1
 setlocal updatetime=100
 
 " generate tags. from https://github.com/jstemmer/gotags
-nnoremap <buffer> <leader>ut :!find . "$GOPATH/src" "$GOROOT/src" -name "*.go" \| xargs gotags > tags<CR>
+nnoremap <buffer> <leader>ut :!find . "${GOPATH:-/home/menghan/go}/src" "${GOROOT:-/usr/local/go}/src" -name "*.go" \| xargs gotags > tags<CR>
 let g:tagbar_type_go = {
 			\ 'ctagstype' : 'go',
 			\ 'kinds'     : [
