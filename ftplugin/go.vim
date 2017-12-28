@@ -62,3 +62,5 @@ let g:tagbar_type_go = {
 			\ 'ctagsbin'  : 'gotags',
 			\ 'ctagsargs' : '-sort -silent'
 			\ }
+
+let g:go_echo_command_info = 0
